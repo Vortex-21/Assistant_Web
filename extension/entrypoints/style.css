@@ -1,0 +1,63 @@
+#assistant-button {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #2cb673;
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0 4px 4px rgb(54, 53, 53);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#summary-box {
+  position: fixed;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  width: 500px;
+  max-height: 600px;
+  overflow: auto;
+  opacity: 1;
+  z-index: 9999;
+}
+#close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+#summary-text {
+  margin-top: 3rem;
+  color: black;
+  font-size: 20px;
+}
+
+#options {
+  position: fixed;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  width: 500px;
+  max-height: 600px;
+  overflow: auto;
+  opacity: 1;
+  z-index: 9999;
+}
+
+#closeOptions {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
