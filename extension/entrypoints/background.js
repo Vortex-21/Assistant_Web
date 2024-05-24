@@ -4,18 +4,18 @@ export default defineBackground(() => {
 
   chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     console.log("message : ", message);
-    if (message.action == "summarizeURL") {
+    if (message.action == "summarize") {
       // chrome.tabs.query({ active: true, lastFocusedWindow: true }, async (tabs) => {
       //   const URL = tabs[0].url;
       // });
-      const url = message.URL;
-
-      console.log("URL : ", url);
+      const text = message.all_text;
+      console.log(typeof(text),(text.length));
+      // console.log("URL : ", url);
       const fetchApi = async () => {
         try {
           const response = await fetch("http://127.0.0.1:8000/summarize", {
             method: "POST",
-            body: JSON.stringify({ url: url }),
+            body: JSON.stringify({ text: text }),
             headers: {
               "Content-type": "application/json",
             },
@@ -40,7 +40,7 @@ export default defineBackground(() => {
         const fetchAPI = async () => {
           try {
             const response = await fetch(
-              "http://127.0.0.1:8000/summarizeFile",
+              "http://127.0.0.1:8000/summarize",
               {
                 method: "POST",
                 body: JSON.stringify({ text: pdf }),

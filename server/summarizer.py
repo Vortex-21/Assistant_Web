@@ -27,6 +27,8 @@ def get_response(docs,language = 'english'):
 
             5.Conclude your notes with [End of Notes, Message #X] to indicate completion, where "X" represents the total number of messages that I have sent. In other words, include a message counter where you start with #1 and add 1 to the message counter every time I send a message.
 
+            6.Translate the summary to {language} if necessary.
+            
         By following this optimized prompt, you will generate an effective summary that encapsulates the essence of the given text in a clear, detailed, and reader-friendly manner. Optimize output as markdown file.
 
         "{docs}"
