@@ -61,3 +61,17 @@
   cursor: pointer;
   color: black;
 }
+
+.summary-chunk{
+  background-color: grey;
+  margin-left:5px;
+  margin-right:5px;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+
+#chat-button{
+  border-radius:50%;
+  background-color: red;
+  color:white;
+}

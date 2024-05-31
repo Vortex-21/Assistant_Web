@@ -7,7 +7,7 @@ export default defineConfig({
     name: "Summarizer",
     version: "1.0",
     description: "My Chrome Extension",
-    permissions: ["activeTab", "scripting", "nativeMessaging", "tabs"],
+    permissions: ["activeTab", "scripting", "nativeMessaging", "tabs","storage"],
     background: {
       service_worker: "background.js",
     },
